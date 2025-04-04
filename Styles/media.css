@@ -1,0 +1,55 @@
+/*
+------- MAIN PAGE MEDIA QUERIES ------
+*/
+
+/* Small devices (phones, less than 600px) */
+@media screen and (max-width: 600px) {
+  .navigation {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navigation ul {
+    padding-top: 10px;
+  }
+
+  .navigation ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .banner h1 {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+}
+
+/* Medium devices (tablets, 600px - 900px) */
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .navigation {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .banner h1 {
+    font-size: 2em;
+  }
+}
+
+/* Large devices (desktops, 900px and up) */
+@media screen and (min-width: 900px) {
+  .navigation {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .banner h1 {
+    font-size: 2.5em;
+  }
+}

@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full page loader overlay */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none; /* Initially hidden */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Loader animation */
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 8px solid #046D8B;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #333;
+}
+
+#hero {
+  color: white;
+  height: 85vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 21, 37, .8);
+  z-index: -1;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.navigation {
+  flex: 3; /* 30% of the container */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+}
+
+.name img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: hsla(0, 0%, 100%, 20%);
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.navigation ul li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.navigation ul li a:hover {
+  text-decoration: underline;
+  text-decoration-color: aqua;
+  text-underline-offset: 3px;
+}
+
+
+.banner {
+  flex: 7; /* 70% of the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner img {
+  margin-right: 1.5em;
+  margin-left: .32em;
+  border-radius: 19%;
+  border: .9px solid white;
+  object-fit: cover;
+}
+
+.banner p {
+  margin-right: .32em;
+  font-family: "Underdog", system-ui;
+}
+
+.author-name {
+  color: gold;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.intro {
+  font-family: monospace;
+  font-size: 1.2em;
+  color: darkblue;
+}
+
+.intro img {
+  border-radius: 50%;
+  float: left;
+  margin-top: 0;
+  object-fit: cover;
+}
+
+.main-page-about {
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  /* text-align: center; */
+  overflow: hidden;
+}
+
+footer {
+  height: 15vh;
+  background-color: #1a1f50;
+  color: white;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p:first-child {
+  margin-left: 1.25rem;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  padding: .4em;
+  transition: color 0.3s ease, opacity 0.3s ease, transform 0.3s ease;
+}
+
+footer a:last-child {
+  margin-right: 1.25rem;
+}
+
+footer a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid transparent;
+  transition: all 2s ease;
+}
+
+footer a:hover::before {
+  border-top-color: goldenrod;
+  border-right-color: goldenrod;
+  border-bottom-color: goldenrod;
+  border-left-color: goldenrod;
+  transition-delay: 0s, 0.7s, 1.3s, 1.8s;
+}
+
+footer a:hover {
+  font-family: "Bytesized", sans-serif;
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+footer a:hover::after {
+  content: attr(data-hover); /* Display new text with new font */
+  font-family: "Bytesized", sans-serif;
+  opacity: 0;
+  transform: scale(1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}

@@ -1,0 +1,95 @@
+/*
+---About.html Media queries---
+*/
+/* Default styles are handled in about.css */
+
+/* Responsive design for tablets (1024px and below) */
+@media screen and (max-width: 1024px) {
+  .description {
+    height: auto;
+    padding: 2rem;
+  }
+
+  .skills {
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .image-box {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+/* Responsive design for mobile devices (768px and below) */
+@media screen and (max-width: 768px) {
+  header {
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 1rem;
+  }
+
+  .description {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  #skills {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .skills {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .image-box {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
+  #contact form {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+/* Responsive design for extra-small screens (480px and below) */
+@media screen and (max-width: 480px) {
+  .description p {
+    font-size: 0.9rem;
+  }
+
+  .skills {
+    width: 100%;
+    padding: 0.8rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .level {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  footer a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}

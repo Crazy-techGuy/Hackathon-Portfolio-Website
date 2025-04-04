@@ -1,0 +1,50 @@
+/* 
+--- Common Styles For all Side Pages ---
+*/
+
+
+.navigation {
+  height: 6.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 20%);
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.name img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: hsla(0, 0%, 100%, 20%);
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.navigation ul li a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+
+.navigation ul li a:hover {
+  text-decoration: underline;
+  text-decoration-color: aqua;
+  text-underline-offset: 3px;
+}
+

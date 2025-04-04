@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 15vh;
+  position: sticky;
+  top: 0;
+  background-color: rgb(15, 23, 42);
+}
+
+body {
+  background-color: rgb(15, 23, 42);
+  color: rgb(148, 163, 184);
+}
+
+.page-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.aside {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  height: 100vh;
+  position: sticky;
+  /* width: 19.5rem; */
+}
+
+.aside p,
+.aside img {
+  margin: 1.25rem;
+}
+
+.aside img {
+  margin-top: 0;
+  width: 80%;
+}
+
+.aside p a {
+  text-decoration: none;
+  color: rgb(218, 32, 141);
+}
+
+.aside p a:hover {
+  text-decoration: underline;
+  text-decoration-color: aqua;
+  text-underline-offset: 3px;
+}
+
+.expertise {
+  flex: 7;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  border-left: 1px solid hsla(0, 0%, 100%, 20%);
+  /* z-index: -2; */
+}
+
+.expertise h2 {
+  font-family: monospace;
+  font-size: 2rem;
+  align-self: center;
+  margin: 1.25rem 0 0 0;
+}
+
+.card {
+  display: flex;
+  border-radius: 10px;
+  margin: 1.25rem;
+  padding: 20px;
+  width: 95%;
+  gap: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent */
+}
+
+.card-img {
+  width: 150px;
+  border-radius: 8px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  color: #dbeafe; /* Light blue text */
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.arrow {
+  color: #48c6ef;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  margin-top: .32rem;
+  color: #9ca3af; /* Grayish text */
+}
+
+.expertise h4 {
+  font-family: monospace;
+  color: rgb(218, 32, 141);
+  font-size: 2rem;
+  align-self: center;
+  margin: 1.25rem 0;
+}
