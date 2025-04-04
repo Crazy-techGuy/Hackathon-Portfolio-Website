@@ -62,5 +62,7 @@ For any queries, feedback, or collaboration, feel free to reach out:
 - **LinkedIn**: [Alex Kimari](www.linkedin.com/in/alex-kimari-80096027a)
 
 ---
-*Developed with passion for the Power Learn Project Hackathon.* 🚀
+*Developed with passion for the Power Learn Project Hackathon.* 🚀  
+
+-- I kinda had to Rush for Deadline so i missed a couple of Features🤡
 
