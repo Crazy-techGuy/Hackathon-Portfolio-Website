@@ -1,7 +1,8 @@
 # Alex Kimari's Portfolio - Power Learn Project Hackathon
 
 ## Overview
-This is a personal portfolio website developed as part of the Power Learn Project Hackathon Challenge. The website showcases my skills, experience, and projects as a Full Stack Developer. It is designed to be visually appealing, responsive, and user-friendly.
+This is a personal portfolio website developed as part of the Power Learn Project Hackathon Challenge. The website showcases my skills, experience, and projects as a Full Stack Developer. It is designed to be visually appealing, responsive, and user-friendly.  
+Link to site: https://alexkimari.netlify.app/
 
 ## Features
 - **About Me**: A brief introduction about my passion for development.
